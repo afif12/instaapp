@@ -5,6 +5,9 @@ class Home extends CI_Controller {
 		if(!$this->newsession->userdata('logged_in')){
 			$this->load->view("home/out");
 		}else{
+			$query = "SELECT * FROM post_tm A LEFT JOIN user_tm B ON B.`user_id` = A.`user_id`";
+			$res = $this->main_act->get_result($query);
+            $data["post"] = $query;
 			$data['content'] = $this->load->view("welcome", $data, true);
 			$this->load->view("home/in", $data);
 		}
