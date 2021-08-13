@@ -37,7 +37,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
       </button>
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="<?= site_url("home") ?>" class="nav-link">Log In</a></li>
+          <li class="nav-item"><a href="<?= site_url("register") ?>" class="nav-link">Registrasi Akun</a></li>
         </ul>
       </div>
     </div>
@@ -47,7 +47,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
       <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-start">
           <div class="col-md-12 ftco-animate text-center mb-5">
-            <h1 class="mb-3 bread">Log In</h1>
+            <h1 class="mb-3 bread">Registrasi Akun</h1>
           </div>
         </div>
       </div>
@@ -57,18 +57,27 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
       <div class="container">
         <div class="row block-9">
           <div class="col-md-12 order-md-last d-flex">
-            <form  action="<?= site_url('home/verify'); ?>" method="POST" name="form" class="bg-white p-5 contact-form">
+            <form  action="<?= site_url('register/account'); ?>" method="POST" name="form" class="bg-white p-5 contact-form">
               <div class="form-group" style="width: 50%">
-                <input type="text" class="form-control" placeholder="Username" required>
+                <input type="text" class="form-control" name="phone" placeholder="Mobile Number" required>
               </div>
               <div class="form-group" style="width: 50%">
-                <input type="password" class="form-control" placeholder="Password" required>
+                <input type="email" class="form-control" name="email" placeholder="Email" required>
+              </div>
+              <div class="form-group" style="width: 50%">
+                <input type="text" class="form-control" name="name" placeholder="Full Name" required>
+              </div>
+              <div class="form-group" style="width: 50%">
+                <input type="text" class="form-control" name="login" placeholder="Username" required>
+              </div>
+              <div class="form-group" style="width: 50%">
+                <input type="password" class="form-control" name="password" placeholder="Password" required>
               </div>
               <div class="form-group">
-                <input type="submit" value="Log In" class="btn btn-primary">
+                <input type="submit" value="Registrasi Akun" class="btn btn-primary">
               </div>
               <div class="form-group" style="width: 50%">
-                <span style="color: #666">atau, <a href="<?= site_url("register") ?>">klik di sini</a> untuk proses Registrasi Akun</span>
+                <span style="color: #666">atau, <a href="<?= site_url("home") ?>">klik di sini</a> untuk proses Login</span>
               </div>
             </form>
           </div>

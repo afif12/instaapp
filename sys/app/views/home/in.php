@@ -5,7 +5,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>JDIH Biro Hukum dan Organisasi - Badan POM RI</title>
+  <title>InstaApp - SEVIMA</title>
   <meta charset="utf-8">
   <link rel="icon" type="image/png" href="<?= base_url() ?>assets/images/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,9 +30,10 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar"><div class="container-fluid px-md-4">
-    <a class="navbar-brand" href="https://jdihn.go.id/" target="_blank" style="width: 230px"><img style="width: 100%;" src="<?= base_url() ?>assets/images/logo_jdih.png"></a>
-    <a class="navbar-brand" href="https://pom.go.id/new/" target="_blank" style="width: 60px"><img style="width: 100%; margin-left: 13px" src="<?= base_url() ?>assets/images/favicon.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="oi oi-menu"></span> Menu</button>
+  <a class="navbar-brand" href="index.html">InstaApp</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
     <div class="collapse navbar-collapse" id="ftco-nav"><ul class="navbar-nav ml-auto">
       <li class="nav-item"><a href="<?= site_url("view/gallery") ?>" class="nav-link">Galeri</a></li>
       <li class="nav-item"><a href="<?= site_url("view/directory") ?>" class="nav-link">Direktori</a></li>
