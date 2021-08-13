@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row no-gutters slider-text align-items-end justify-content-start">
       <div class="col-md-12 ftco-animate text-center mb-5">
-        <h1 class="mb-3 bread">Our Blog</h1>
+        <h1 class="mb-3 bread">Profil</h1>
       </div>
     </div>
   </div>
@@ -12,6 +12,13 @@
 <section class="ftco-section">
   <div class="container">
     <div class="row d-flex">
+      <div class="about-author d-flex p-4 bg-light">
+        <div class="desc">
+          <h3><?= $data['name'] ?></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+          <a href="<?= site_url("profile/posting") ?>" class="btn btn-primary">Post</a>
+        </div>
+      </div>
       <div class="col-md-3 d-flex ftco-animate">
         <div class="blog-entry align-self-stretch">
           <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
