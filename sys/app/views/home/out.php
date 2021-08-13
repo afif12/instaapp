@@ -22,11 +22,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/flaticon.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/icomoon.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css?v6">
-  <link rel="stylesheet" href="<?= base_url(); ?>assets/css/newtable-3.0-blue.css" />
-    <link href="<?= base_url() ?>assets/dflip/css/dflip.css" rel="stylesheet" type="text/css">
-    <link href="<?= base_url() ?>assets/dflip/css/themify-icons.css" rel="stylesheet" type="text/css">
   <script src="<?= base_url() ?>assets/js/jquery-1.2.6.min.js"></script>
-    <script src="<?= base_url() ?>assets/js/newtable.js" type="text/javascript"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -59,10 +55,10 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
           <div class="col-md-12 order-md-last d-flex">
             <form  action="<?= site_url('home/verify'); ?>" method="POST" name="form" class="bg-white p-5 contact-form">
               <div class="form-group" style="width: 50%">
-                <input type="text" class="form-control" placeholder="Username" required>
+                <input type="text" class="form-control" name="user" placeholder="Username" required>
               </div>
               <div class="form-group" style="width: 50%">
-                <input type="password" class="form-control" placeholder="Password" required>
+                <input type="password" class="form-control" name="key" placeholder="Password" required>
               </div>
               <div class="form-group">
                 <input type="submit" value="Log In" class="btn btn-primary">

@@ -1,13 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 class Home extends CI_Controller {
 	public function index(){
 		if(!$this->newsession->userdata('logged_in')){
 			$this->load->view("home/out");
 		}else{
-			$content = $this->load->view("welcome", $data, true);
-			$data = array("content" => $content, "menu" => "home");
+			$data['content'] = $this->load->view("welcome", $data, true);
 			$this->load->view("home/in", $data);
 		}
 	}
@@ -17,12 +15,12 @@ class Home extends CI_Controller {
 			$user = $this->input->post('user');
 			$key = $this->input->post('key');
 			echo "<script>";
-			$query = "SELECT A.* FROM user_tm A WHERE A.login = '$user' AND status_id = 'US01'";
+			$query = "SELECT A.* FROM user_tm A WHERE A.login = '$user' AND status_id = 'ST01'";
 			if($this->main_act->get_result($query)){
 				$row = $query->row_array();
 				if($row['password']!=$key){
 					echo "alert('Proses gagal, Password yang Anda masukkan salah');\n";
-				}elseif($row['status_id']!='US01'){
+				}elseif($row['status_id']!='ST01'){
 					echo "alert('Proses gagal, User Anda tidak aktif');\n";
 				}else{
 					$row['logged_in'] = TRUE;

@@ -1,7 +1,3 @@
-<?php
-if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-// print_r($content);die('-');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,11 +18,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/flaticon.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/icomoon.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css?v6">
-  <link rel="stylesheet" href="<?= base_url(); ?>assets/css/newtable-3.0-blue.css" />
-    <link href="<?= base_url() ?>assets/dflip/css/dflip.css" rel="stylesheet" type="text/css">
-    <link href="<?= base_url() ?>assets/dflip/css/themify-icons.css" rel="stylesheet" type="text/css">
   <script src="<?= base_url() ?>assets/js/jquery-1.2.6.min.js"></script>
-    <script src="<?= base_url() ?>assets/js/newtable.js" type="text/javascript"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar"><div class="container-fluid px-md-4">
@@ -35,14 +27,60 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
         <span class="oi oi-menu"></span> Menu
       </button>
     <div class="collapse navbar-collapse" id="ftco-nav"><ul class="navbar-nav ml-auto">
-      <li class="nav-item"><a href="<?= site_url("view/gallery") ?>" class="nav-link">Galeri</a></li>
-      <li class="nav-item"><a href="<?= site_url("view/directory") ?>" class="nav-link">Direktori</a></li>
+      <li class="nav-item"><a href="<?= site_url("home") ?>" class="nav-link">Beranda</a></li>
+      <li class="nav-item"><a href="<?= site_url("profile") ?>" class="nav-link">Profil</a></li>
+      <li class="nav-item"><a href="<?= site_url("home/logout") ?>" class="nav-link">Logout</a></li>
     </ul></div>
   </div></nav>
-  <?= $content ?>
-  <footer class="ftco-footer ftco-bg-dark ftco-section"><div class="container">
-    <div class="row"><div class="col-md-12 text-center" style="color: #00a651">
-    &copy; 2020 - Biro Hukum dan Organisasi, Badan Pengawas Obat dan Makanan Republik Indonesia</div></div>
+	<?= $content ?>
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+  <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <ul class="list-unstyled">
+                <li><a href="#" class="pb-1 d-block">About</a></li>
+                <li><a href="#" class="pb-1 d-block">API</a></li>
+                <li><a href="#" class="pb-1 d-block">Hashtags</a></li>
+                <li><a href="#" class="pb-1 d-block">Fitness</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <ul class="list-unstyled">
+                <li><a href="#" class="pb-1 d-block">Blog</a></li>
+                <li><a href="#" class="pb-1 d-block">Privacy</a></li>
+                <li><a href="#" class="pb-1 d-block">Locations</a></li>
+                <li><a href="#" class="pb-1 d-block">Food & Drinks</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <ul class="list-unstyled">
+                <li><a href="#" class="pb-1 d-block">Job</a></li>
+                <li><a href="#" class="pb-1 d-block">Term</a></li>
+                <li><a href="#" class="pb-1 d-block">Beauty</a></li>
+                <li><a href="#" class="pb-1 d-block">Music</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <ul class="list-unstyled">
+                <li><a href="#" class="pb-1 d-block">Help</a></li>
+                <li><a href="#" class="pb-1 d-block">Top Account</a></li>
+                <li><a href="#" class="pb-1 d-block">Dance</a></li>
+                <li><a href="#" class="pb-1 d-block">Visual Arts</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+    <div class="row"><div class="col-md-12 text-center">
+    &copy; 2021 - Test Sevima</div></div>
   </div></footer>
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
   <script src="<?= base_url() ?>assets/js/jquery.min.js"></script>
