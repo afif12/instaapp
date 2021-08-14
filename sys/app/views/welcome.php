@@ -17,15 +17,15 @@
 			?>
       <div class="col-md-3 d-flex ftco-animate">
         <div class="blog-entry align-self-stretch">
-          <a href="blog-single.html" class="block-20" style="background-image: url(<?= base_url() ?>upload/<?=$row['upload_file']?>);">
+          <a href="<?= site_url('home/preview/'.$row['post_id']) ?>" class="block-20" style="background-image: url(<?= base_url() ?>upload/<?=$row['upload_file']?>);">
           </a>
           <div class="text mt-3">
             <div class="meta mb-2">
-              <div><a href="#">August 28, 2019</a></div>
-              <div><a href="#"><?= $row['name'] ?></a></div>
-              <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+              <div><a href="<?= site_url('home/preview/'.$row['post_id']) ?>"><?= $row['date'] ?></a></div>
+              <div><a href="<?= site_url('home/preview/'.$row['post_id']) ?>"><?= $row['name'] ?></a></div>
+              <div><a href="<?= site_url('home/preview/'.$row['post_id']) ?>" class="meta-chat"><span class="icon-chat"></span><?= $row['jumlah'] ?></a></div>
             </div>
-            <h3 class="heading"><a href="#"><?= $row['caption'] ?></a></h3>
+            <h3 class="heading"><a href="<?= site_url('home/preview/'.$row['post_id']) ?>"><?= $row['caption'] ?></a></h3>
           </div>
         </div>
       </div>
